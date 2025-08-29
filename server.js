@@ -15,7 +15,7 @@ app.post('/dream', async (req, res) => {
     const prompt = req.body.prompt;
     try {
         const aiResponse = await openai.images.generate({
-            model: 'gpt-image-1',
+            model: 'dall-e-2',
             prompt,
             n: 1,
             size: '1024x1024',
